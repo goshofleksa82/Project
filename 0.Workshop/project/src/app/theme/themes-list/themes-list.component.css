@@ -1,0 +1,118 @@
+/* General styling */
+main {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Loader styling */
+app-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Title section */
+.theme-title {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Theme container */
+.theme-container {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.theme-container:hover {
+  transform: translateY(-5px);
+}
+
+/* Theme name wrapper */
+.theme-name-wrapper {
+  padding: 16px;
+}
+
+/* Theme name */
+.theme-name {
+  margin-bottom: 16px;
+}
+
+.theme-name a.normal {
+  text-decoration: none;
+  color: #333;
+}
+
+.theme-name a.normal:hover {
+  text-decoration: underline;
+}
+
+.theme-name h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* Columns layout */
+.columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+/* Left column */
+.columns p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Time display */
+time {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Nickname styling */
+.nick-name span {
+  font-weight: bold;
+  color: #555;
+}
+
+/* Subscribers */
+.subscribers {
+  text-align: right;
+}
+
+.subscribers p {
+  font-size: 14px;
+  color: #666;
+}
+
+.subscribers span {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .theme-title {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .theme-container {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+

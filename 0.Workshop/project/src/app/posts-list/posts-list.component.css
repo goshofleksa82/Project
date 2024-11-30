@@ -1,0 +1,101 @@
+/* General styling for the aside section */
+aside {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 20px 0;
+  max-width: 300px;
+}
+
+/* Loader styling */
+app-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Aside container */
+.aside {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title styling */
+.aside .title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #333;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 8px;
+}
+
+/* Recent post container */
+.aside-theme {
+  border-bottom: 1px solid #ddd;
+  padding: 12px 0;
+  transition: background-color 0.3s ease;
+}
+
+.aside-theme:last-child {
+  border-bottom: none;
+}
+
+.aside-theme:hover {
+  background-color: #eaeaea;
+}
+
+/* Links for each post */
+.aside-theme a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+.aside-theme a:hover {
+  text-decoration: underline;
+}
+
+/* Post title styling */
+.aside-theme h3 {
+  font-size: 16px;
+  margin: 0 0 8px;
+  color: #444;
+}
+
+/* Username styling */
+.aside-theme p {
+  font-size: 14px;
+  margin: 4px 0;
+  color: #666;
+}
+
+.aside-theme p span {
+  font-weight: bold;
+  color: #444;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  aside {
+    max-width: 100%;
+    padding: 12px;
+  }
+
+  .aside .title {
+    font-size: 18px;
+  }
+
+  .aside-theme h3 {
+    font-size: 14px;
+  }
+
+  .aside-theme p {
+    font-size: 12px;
+  }
+}
+

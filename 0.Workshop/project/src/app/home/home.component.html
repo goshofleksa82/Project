@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="container">
+    <div class="welcome">
+      <h3>Welcome!</h3>
+      <p>
+        Welcome to Our Blog Hub!
+Discover, Learn, and Share: Your Go-To Space for Thoughtful Blogs
+
+At our blog hub, we believe that the best ideas are the ones that are shared. Whether you’re looking for insights into technology, lifestyle, business, education, or personal growth, our diverse collection of blogs has something for everyone.
+
+What We Offer:
+Inspiring Content: Explore articles that inspire creativity, spark new ideas, and provide solutions to everyday problems.
+Expert Perspectives: Get advice from experts in various fields who offer tips, strategies, and knowledge based on years of experience.
+Engaging Community: Join a passionate community of readers and writers who share their experiences and perspectives on topics that matter.
+Practical Insights: Find practical tips, tutorials, and how-tos on everything from digital marketing to self-improvement.
+Why Read Blogs?
+Blogs are more than just a source of information—they're a way to connect with like-minded individuals, stay up-to-date with trends, and deepen your knowledge in areas you care about. Whether you're an aspiring writer, a professional, or someone who loves to learn, there’s always something new to discover.
+
+Join the Conversation:
+We believe that every voice matters. Don’t just read, engage with the content! Leave comments, share posts, and even submit your own blogs to inspire others. Our platform is a space for everyone to connect, grow, and share their stories.
+      </p>
+
+      @if(!isLoggedIn) {
+      <div class="logged">
+        <ul>
+          <li>
+            <a routerLink="/login">
+              <i class="fas fa-sign-in-alt"></i>
+              Login
+            </a>
+          </li>
+          <li>
+            <a routerLink="/register">
+              <i class="fas fa-user-plus"></i>
+              Register
+            </a>
+          </li>
+        </ul>
+      </div>
+      }
+    </div>
+  </div>
+</div>
